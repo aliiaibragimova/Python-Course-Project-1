@@ -15,17 +15,16 @@ In this specific case the advanced calculator differs from the original task: it
 
 Build With
 
-PyCharm
-Lectures from Amir Tosson
-Google
+PyCharm // Lectures from Amir Tosson (University of Siegen) // Google
  
 Usage
 
-All three calculators can be used to perform basic mathematical operations on two input numbers and basically could be combined in one code. 
+All three calculators can be used to perform basic mathematical operations on two input numbers and the advanced calculator 2 can perform multiple basic operations on multiple input numbers. 
 
 License
 
 GNU General Public License v3 or higher
+
 Contact
  
 Aliia Ibragimova aliia.ibragimova@uni-siegen.de
@@ -40,3 +39,4 @@ GNU General Public License v3 or higher
 
 www.programiz.com
 
+https://levelup.gitconnected.com/3-ways-to-write-a-calculator-in-python-61642f2e4a9a
