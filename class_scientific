@@ -1,0 +1,64 @@
+import math
+
+class Scientific_1:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
+    def addition(self):
+        return self.a + self.b
+
+
+    def subtraction(self):
+        return self.a - self.b 
+
+
+    def multiplication(self):
+        return self.a * self.b
+
+
+    def division(self):
+        if self.b != 0:
+            return self.a / self.b
+        else:
+            return "Error. Cannot be divided by zero!"
+        
+        
+    def power(self):
+         return self.a ** self.b
+
+  
+class Scientific_2:
+    def __init__(self,a):
+        self.a = a
+         
+    def sqrt(a):
+        return math.sqrt(int(self.a)) 
+    
+    
+    
+    def sin(a):
+       return math.sin(int(self.a))    
+     
+            
+     
+    def cos(a):
+       return math.cos(int(self.a))    
+       
+    def operation_s (self, operator_s):
+      if operator_s == '+':
+         return self.addition()
+      elif operator_s == '-':
+         return self.subtraction()
+      elif operator_s == '*':
+         return self.multiplication()
+      elif operator_s == '/':
+         return self.division()
+      elif operator_s == '**':
+         return self.power()
+      elif operator_s == 'sq':
+         return self.sqrt()
+      elif operator_s == 'sin':
+         return self.sin()
+      elif operator_s == 'cos':
+         return self.cos()
