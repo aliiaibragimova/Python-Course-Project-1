@@ -1,1 +1,77 @@
+import Basic as bs
+
+"""
+author:    Aliia Ibragimova
+license:   GNU General Public License v3 or higher
+copyright: Universität Siegen, Deutschland
+email:     aliia.ibragimova@uni-siegen.de
+"""
+
+"""
+summary:    Introduction to scientific programming with Python
+project:    Develop 3 types of calculators:
+            - Basic: it can perform the basic operations (+,-, x,÷) on two input numbers.
+            - Scientific: it can perform the basic operations and sqrt, power, sin, cos.
+            - Advanced: it can perform multiple basic operations on multiple input numbers. 
+date:       03.02.2022
+"""
+# First the user should choose a type of calculator:
+    
+while True: 
+    
+        print ("Welcome to the Calculator App! Avaliable options: ")
+        print ("B: Basic")
+        print ("S: Scientific")
+        print ("A: Advanced")
+        print ("E: Exit")
+    
+        calc = input("Please, choose a calculator type: ")
+        
+        while True:
+            if calc in ('B', 'S', 'A', 'E'):
+                break
+            else:
+                print ("Invalid Input")
+                
+        if calc == 'B':
+            while True:
+                print("Welcome to the basic calculator!")
+                print("You can operate only with two numbers.")
+                print("Available operators: \nA = addition \nS = subtraction \nM = multiplication \nD = division")
+         
+                o = input("Please,choose an operator 'A'/'S'/'M'/'D': ")
+                
+                if o in ('A', 'S', 'M', 'D'):
+                  a = input("Enter the first number: ")
+                  try:
+                      a = float (a)
+   
+                  except ValueError:
+                       print('Invalid Input!')
+                          
+                  b = input("Enter the second number: ")
+                  try:
+                      b = float (b)
+   
+                  except ValueError:
+                       print('Invalid Input!')
+                  
+        obj = bs.Basic(a, b)         
+               
+        if o == 'A':
+            print(obj.addition())
+        elif o == 'S':
+            print(obj.subtraction())
+        elif o == 'M':
+            print(obj.multiplication())
+        elif o == 'D':
+            print(obj.division())
+        else:
+            print("Invalid Input")
+    # To stop break the loop or to do another calculation the user can choose between these two options:
+        new_round = input("Would you like to perform another calculation? Enter yes or no: ")
+        if new_round == 'no':
+            break
+        if new_round == 'yes':
+            continue
 
