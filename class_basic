@@ -1,0 +1,33 @@
+class Basic:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
+    def addition(self):
+        return self.a + self.b
+
+
+    def subtraction(self):
+        return self.a - self.b
+
+
+    def multiplication(self):
+        return self.a * self.b
+
+
+    def division(self):
+        if self.b != 0:
+            return self.a / self.b
+        else:
+            return "Error. Cannot be divided by zero!"
+    
+    def operation_b (self, operator_b):
+        if operator_b == '+':
+            return self.addition()
+        elif operator_b == '-':
+            return self.subtraction()
+        elif operator_b == '*':
+            return self.multiplication()
+        elif operator_b == '/':
+            return self.division()
+      
