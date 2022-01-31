@@ -16,7 +16,7 @@ class Basic:
     def subtraction(self):
         return self.a - self.b
 
-    # Function 'addition' multiples variables 'a' by variable 'b'.
+    # Function 'addition' multiples variable 'a' by variable 'b'.
     def multiplication(self):
         return self.a * self.b
 
