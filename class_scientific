@@ -45,20 +45,4 @@ class Scientific_2:
     def cos(a):
        return math.cos(int(self.a))    
        
-    def operation_s (self, operator_s):
-      if operator_s == '+':
-         return self.addition()
-      elif operator_s == '-':
-         return self.subtraction()
-      elif operator_s == '*':
-         return self.multiplication()
-      elif operator_s == '/':
-         return self.division()
-      elif operator_s == '**':
-         return self.power()
-      elif operator_s == 'sq':
-         return self.sqrt()
-      elif operator_s == 'sin':
-         return self.sin()
-      elif operator_s == 'cos':
-         return self.cos()
+  
