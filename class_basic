@@ -1,24 +1,31 @@
+# Here the class of basic calculator is defined.
+# All necessary functions a defined below:
+
 class Basic:
-    def __init__(self,a,b):
+    # The basic calculator can operate only with two numbers.
+    # Therefore, only two variables are defined in the class Basic.
+    def __init__(self, a, b):
         self.a = a
         self.b = b
 
+    # Function 'addition' sums variables 'a' and 'b'.
     def addition(self):
         return self.a + self.b
 
-
+    # Function 'subtraction' subtracts variable 'b' from variable 'a'.
     def subtraction(self):
         return self.a - self.b
 
-
+    # Function 'addition' multiples variables 'a' by variable 'b'.
     def multiplication(self):
         return self.a * self.b
 
-
+    # Function 'division' divides variable 'a' by variable 'b'.
+    # Division by zero is considered directly in the function.
     def division(self):
         if self.b != 0:
             return self.a / self.b
         else:
-            return "Error. Cannot be divided by zero!"
-    
+            return 'Error. Cannot be divided by zero!'
+
     
