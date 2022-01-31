@@ -1,5 +1,5 @@
 # Here the class of basic calculator is defined.
-# All necessary functions a defined below:
+# All necessary functions are defined below:
 
 class Basic:
     # The basic calculator can operate only with two numbers.
