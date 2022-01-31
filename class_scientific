@@ -1,48 +1,56 @@
 import math
 
-class Scientific_1:
-    def __init__(self,a,b):
+
+# Here the class of scientific calculator is defined.
+# To add functions as 'sqrt', 'sin', and 'cos' first module 'math' was imported.
+# Module 'math' gives access to the underlying C library functions.
+# All necessary functions are defined below.
+
+# Some functions in this calculator operate with two variables and some with one.
+# Therefore, two classes were defined.
+
+class Scientific1:
+    def __init__(self, a, b):
         self.a = a
         self.b = b
 
+    # Function 'addition' sums variables 'a' and 'b'.
     def addition(self):
         return self.a + self.b
 
-
+    # Function 'subtraction' subtracts variable 'b' from variable 'a'.
     def subtraction(self):
-        return self.a - self.b 
+        return self.a - self.b
 
-
+    # Function 'addition' multiples variables 'a' by variable 'b'.
     def multiplication(self):
         return self.a * self.b
 
-
+    # Function 'division' divides variable 'a' by variable 'b'.
+    # Division by zero is considered directly in the function.
     def division(self):
         if self.b != 0:
             return self.a / self.b
         else:
             return "Error. Cannot be divided by zero!"
-        
-        
-    def power(self):
-         return self.a ** self.b
 
-  
-class Scientific_2:
-    def __init__(self,a):
+    # In function 'power' variable base 'a' is raised to a number power 'b'.
+    def power(self):
+        return self.a ** self.b
+
+
+class Scientific2:
+    def __init__(self, a):
         self.a = a
-         
-    def sqrt(a):
-        return math.sqrt(int(self.a)) 
-    
-    
-    
-    def sin(a):
-       return math.sin(int(self.a))    
-     
-            
-     
-    def cos(a):
-       return math.cos(int(self.a))    
-       
-  
+
+    # Function 'sqrt' takes square root from variable 'a'
+    def sqrt(self):
+        return math.sqrt(int(self.a))
+
+    # Function 'sin' defines sine of variable 'a'
+    def sin(self):
+        return math.sin(int(self.a))
+
+    # Function 'cos' defines cosine of variable 'a'
+    def cos(self):
+        return math.cos(int(self.a))
