@@ -1,42 +1,39 @@
 
-# Python Couse. Project 1
+# Calculator Project
 
-About The Project 
+About The Project:
 
-This project is the first project in the frame of the programming course ìIntroduction to scientific programming with Pythonî at the University of Siegen. The project was created to evaluate how students comprehend and use the knowledge they receive during the lectures and practical seminars. 
+This project is the first project in the frame of the programming course ‚ÄúIntroduction to scientific programming with Python‚Äù at the University of Siegen. The project was created to evaluate how students comprehend and use the knowledge they receive during the lectures and practical seminars. 
 
-The task was to develop 3 types of calculators:
+The task was to develop a calculator app with 3 types of calculators:
 
-1. Basic: it can perform the basic operations (+,-, x,˜) on two input numbers.
+1. Basic: it can perform the basic operations (+,-, x,√∑) on two input numbers.
 2. Scientific: it can perform the basic operations and sqrt, power, sin, cos.
 3. Advanced: it can perform multiple basic operations on multiple input numbers. 
+For each calculator, a specific class was supposed to be created. In this particular work, the advanced calculator is created without using classes. 
 
-In this specific case the advanced calculator differs from the original task: it allows to perform additional calculations to a previously obtained result. 
-
-Build With
+Build With:
 
 PyCharm // Lectures from Amir Tosson (University of Siegen) // Google
- 
-Usage
 
-All three calculators can be used to perform basic mathematical operations on two input numbers and the advanced calculator 2 can perform multiple basic operations on multiple input numbers. 
+How to use:
 
-License
+Open the calculator.py file in PyCharm or another IDE to run the calculator.
+
+License:
 
 GNU General Public License v3 or higher
 
-Contact
+Contact:
  
 Aliia Ibragimova aliia.ibragimova@uni-siegen.de
 
-Project Link   https://github.com/aliiaibragimova/Python-Course-Project-1
+Project Link:   https://github.com/aliiaibragimova/calculator_project
 
-Acknowledgments 
+Acknowledgments: 
 
-Amir Tosson 
-
+Amir Tosson (the lecturer)
+Mishel Gad (classmate)
 GNU General Public License v3 or higher
-
 www.programiz.com
-
 https://levelup.gitconnected.com/3-ways-to-write-a-calculator-in-python-61642f2e4a9a
