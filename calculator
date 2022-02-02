@@ -36,6 +36,7 @@ while True:
             break
         else:
             print("Invalid Input")
+            break
     # After the chose is made, a respective calculator can be used.
     # Basic calculator:
     if calc == 'b':
