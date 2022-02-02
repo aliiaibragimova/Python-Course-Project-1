@@ -10,7 +10,7 @@ The task was to develop a calculator app with 3 types of calculators:
 1. Basic: it can perform the basic operations (+,-, x,÷) on two input numbers.
 2. Scientific: it can perform the basic operations and sqrt, power, sin, cos.
 3. Advanced: it can perform multiple basic operations on multiple input numbers. 
-For each calculator a specific class was supossed to be created. In this parctucular work the advanced caclulator is creasted without using classes. 
+For each calculator, a specific class was supposed to be created. In this particular work, the advanced calculator is created without using classes. 
 
 Build With:
 
@@ -28,7 +28,7 @@ Contact:
  
 Aliia Ibragimova aliia.ibragimova@uni-siegen.de
 
-Project Link   https://github.com/aliiaibragimova/calculator_project
+Project Link:   https://github.com/aliiaibragimova/calculator_project
 
 Acknowledgments: 
 
