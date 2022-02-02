@@ -2,7 +2,7 @@
 from class_basic import Basic
 from class_scientific import Scientific1
 from class_scientific import Scientific2
-from operator import truediv, mul, add, sub # for the advanced calculator a new class was not difined. 
+from operator import truediv, mul, add, sub
 
 """
 author:    Aliia Ibragimova
@@ -12,8 +12,8 @@ email:     aliia.ibragimova@uni-siegen.de
 """
 
 """
-summary:    Introduction to scientific programming with Python
-project:    Develop 3 types of calculators:
+summary:    Introduction to scientific programming with Python.
+project:    Develop a calculator app with 3 types of calculators:
             - Basic: it can perform the basic operations (+,-, x,÷) on two input numbers.
             - Scientific: it can perform the basic operations and sqrt, power, sin, cos.
             - Advanced: it can perform multiple basic operations on multiple input numbers. 
@@ -24,54 +24,56 @@ date:       03.02.2022
 while True:
     print("                                                  ")
     print("Welcome to the Calculator App! Available options: ")
-    print("B: Basic (two numbers, +-/*).")
-    print("S: Scientific (one or two numbers, +-/*, square root, power, sine, cosine).")
-    print("A: Advanced (multiple numbers, +-/*).")
-    print("E: Exit.")
+    print("b: basic (two numbers, +-/*).")
+    print("s: scientific (one or two numbers, +-/*, square root, power, sine, cosine).")
+    print("a: advanced (multiple numbers, +-/*).")
+    print("e: exit.")
     print("                                                  ")
     calc = input("Please, choose a calculator type: ")
-
+    print("                                                  ")
     while True:
-        if calc in ('B', 'S', 'A', 'E'):
+        if calc in ('b', 's', 'a', 'e'):
             break
         else:
             print("Invalid Input")
     # After the chose is made, a respective calculator can be used.
     # Basic calculator:
-    if calc == 'B':
+    if calc == 'b':
         while True:
             print("                                ")
             print("Welcome to the basic calculator!")
             print("You can operate only with two numbers.")
-            print("Available operators: \nA = addition \nS = subtraction \nM = multiplication \nD = division")
+            print("Available operators: \na = addition \ns = subtraction \nm = multiplication \nd = division")
             print("                                ")
-            o = input("Please,choose an operator 'A'/'S'/'M'/'D': ")
+            o = input("Please,choose an operator 'a'/'s'/'m'/'d': ")
 
-            if o in ('A', 'S', 'M', 'D'):
-                a = input("Enter the first number: ")
-                try:
-                    a = float(a)
-
-                except ValueError:
-                    print('Invalid Input!')
-
-                b = input("Enter the second number: ")
-                try:
-                    b = float(b)
-
-                except ValueError:
-                    print('Invalid Input!')
-
+            if o in ('a', 's', 'm', 'd'):
+                while True:
+                    a = input("Enter the first number: ")
+                    try:
+                        a = float(a)
+                        break
+                    except ValueError:
+                        print('Invalid Input!')
+                        continue
+                while True:
+                    b = input("Enter the second number: ")
+                    try:
+                        b = float(b)
+                        break
+                    except ValueError:
+                        print('Invalid Input!')
+                        continue
             obj = Basic(a, b)
 
-            if o == 'A':
-                print(obj.addition())
-            elif o == 'S':
-                print(obj.subtraction())
-            elif o == 'M':
-                print(obj.multiplication())
-            elif o == 'D':
-                print(obj.division())
+            if o == 'a':
+                print("Result:" + str(obj.addition()))
+            elif o == 's':
+                print("Result:" + str(obj.subtraction()))
+            elif o == 'm':
+                print("Result:" + str(obj.multiplication()))
+            elif o == 'd':
+                print("Result:" + str(obj.division()))
             else:
                 print("Invalid Input")
 
@@ -83,7 +85,7 @@ while True:
             if new_round == 'yes':
                 continue
     # Scientific calculator:
-    elif calc == 'S':
+    elif calc == 's':
         while True:
             print("                                ")
             print("Welcome to the scientific calculator!")
@@ -94,46 +96,51 @@ while True:
             op = input("Please,choose an operator '1'/'2'/'3'/'4'/'5'/'6'/'7'/'8': ")
 
             if op in ('1', '2', '3', '4', '5'):
-                a = input("Enter the first number: ")
-                try:
-                    a = float(a)
-                except ValueError:
-                    print('Invalid Input!')
-
+                while True:
+                    a = input("Enter the first number: ")
+                    try:
+                        a = float(a)
+                        break
+                    except ValueError:
+                        print('Invalid Input!')
+                        continue
                 b = input("Enter the second number: ")
-                try:
-                    b = float(b)
-
-                except ValueError:
-                    print('Invalid Input!')
-
+                while True:
+                    try:
+                        b = float(b)
+                        break
+                    except ValueError:
+                        print('Invalid Input!')
+                        continue
             elif op in ('6', '7', '8'):
-
-                a = input("Enter a number:")
-                try:
-                    a = float(a)
-                except ValueError:
-                    print('Invalid Input!')
+                while True:
+                    a = input("Enter a number:")
+                    try:
+                        a = float(a)
+                        break
+                    except ValueError:
+                        print('Invalid Input!')
+                        continue
 
             obj1 = Scientific1(a, b)
             obj2 = Scientific2(a)
 
             if op == '1':
-                print(obj1.addition())
+                print("Result:" + str(obj1.addition()))
             elif op == '2':
-                print(obj1.subtraction())
+                print("Result:" + str(obj1.subtraction()))
             elif op == '3':
-                print(obj1.multiplication())
+                print("Result:" + str(obj1.multiplication()))
             elif op == '4':
-                print(obj1.division())
+                print("Result:" + str(obj1.division()))
             elif op == '5':
-                print(obj1.power())
+                print("Result:" + str(obj1.power()))
             elif op == '6':
-                print(obj2.sqrt())
+                print("Result:" + str(obj2.sqrt()))
             elif op == '7':
-                print(obj2.sin())
+                print("Result:" + str(obj2.sin()))
             elif op == '8':
-                print(obj2.cos())
+                print("Result:" + str(obj2.cos()))
             else:
                 print("Invalid Input")
 
@@ -146,7 +153,11 @@ while True:
             if new_round1 == 'yes':
                 continue
     # Advanced calculator:
-    elif calc == 'A':
+    # Note: the advanced calculator was created without using classes.
+    # The code is based on https://levelup.gitconnected.com/3-ways-to-write-a-calculator-in-python-61642f2e4a9a
+    # with some modifications.
+
+    elif calc == 'a':
         # The necessary operators for this calculator are listed:
         operators = {
             '+': add,
@@ -175,8 +186,7 @@ while True:
         print("Result: " + str(calculate(x)))
 
         while True:
-            new_calculation = input(
-                "Would you like to do another calculation with the result? Enter yes or no: ")
+            new_calculation = input("Would you like to do another calculation? Enter yes or no: ")
             if new_calculation == 'no':
                 break
             if new_calculation == 'yes':
@@ -186,6 +196,6 @@ while True:
                 print("Invalid Input")
 
     # To quit the calculator:
-    elif calc == 'E':
+    elif calc == 'e':
         break
 # End of the code.
